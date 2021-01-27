@@ -59,7 +59,7 @@ h2 {
   margin-top: 30px;
   margin-bottom: -40px;
   bottom: 0;
-  background-color: #2c202a;
+  background-color: rgba(255, 255, 255, 0);
   font-size: 12px;
 }
 
