@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  div.content-wrapper
+    h1.content__title.title Добро пожаловать в #{title}!
+    section.content__left-block
+      ul.info__items
+        li Coffee Talk всегда под рукой
+          p.text
+            |Насладитесь моментом с ароматной чашкой, где бы вы ни были. Приходите в нашу уютную кофейню или закажите доставку прямо сейчас!
+
+    section.content__right-block
+      div.content__card.contacts-card.card
+        h2.contacts-card__title.subtitle Наш адрес:
+
+        p.contacts-card__address 1918 E Yesler Way, Seattle, WA 98122, Соединенные Штаты
+        h2.contacts-card__title.subtitle Связаться по телефону:
+
+        a.contacts-card__phone(href="tel: +1 206-322-0807") +1 206-322-0807
+
+        ul.contacts-card__items
+          li.contacts-card__item
+            a.contacts-card__link.contacts-card__link--facebook-icon(href="https://facebook.com" target="_blank") FB
+
+          li.contacts-card__item
+            a.contacts-card__link.contacts-card__link--telegram-icon(href="https://web.telegram.org/" target="_blank") TG
+
+          li.contacts-card__item
+            a.contacts-card__link.contacts-card__link--instagram-icon(href="https://instagram.com" target="_blank") IG
+  div.top__button
+    a.top__button__link(href="/") наверх ↑
+
+
+
+
+
+
+
+
+
+

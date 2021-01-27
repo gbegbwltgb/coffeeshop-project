@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    div.content-wrapper.contacts
+        div.contacts-card.card
+            h2.contacts-card__title.subtitle Вы можете найти нас по адресу:
+
+            p.contacts-card__address 1918 E Yesler Way, Seattle, WA 98122, Соединенные Штаты
+            h2.contacts-card__title.subtitle Контактный телефон:
+            a.contacts-card__phone(href="tel: +1 206-322-0807") +1 206-322-0807
+
+            ul.contacts-card__items
+                li.contacts-card__item
+                    a.contacts-card__link.contacts-card__link--facebook-icon(href="https://facebook.com" target="_blank") FB
+
+                li.contacts-card__item
+                    a.contacts-card__link.contacts-card__link--telegram-icon(href="https://web.telegram.org" target="_blank") TG
+
+                li.contacts-card__item
+                    a.contacts-card__link.contacts-card__link--instagram-icon(href="https://instagram.com" target="_blank") IG
+
+        div.contacts__button
+            a.contacts__button__link(href="/about") или узнать больше о Coffee Talk...🡥

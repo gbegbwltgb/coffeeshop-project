@@ -1,0 +1,48 @@
+extends layout
+
+block content
+    div.content-wrapper.reserve
+        div.reserve-card.card
+            h1.reserve__title.subtitle Заказать доставку или кофе с собой
+            //h2 Фокус на главном
+            p.content__info  Торопитесь? Мы подготовим кофе к назначенному времени или доставим свежий напиток в любую точку города!
+            p.text Заполните форму ниже:
+
+
+            div.reservation-form
+
+                form.reservation-form__form(action="/info", method="post")
+                    div.form__group
+                        input#username.field.form__input(type="text", name="username", autocomplete="off", required)
+
+                        span.form__bar
+
+                        label.form__label(for="username") Ваше имя
+
+                    div.form__group
+                        input#email.field.form__input(type="email", name="email", autocomplete="off", required)
+
+                        span.form__bar
+
+                        label.form__label(for="email") Ваша почта
+
+                    div.form__group
+                        input#date.field.form__input(type="date", name="date", autocomplete="on", required)
+
+                        span.form__bar
+
+                        label.form__label(for="date") Дата
+                    div.form__group
+                        input#drink.field.form__input(type="text", name="drink", autocomplete="on", required)
+
+                        span.form__bar
+
+                        label.form__label(for="drink") Напиток
+
+                    //button.button(type="submit") Подтвердить заказ
+                    div.button
+                        a.submit(href="/info") Подтвердить заказ
+
+
+    div.top__button
+        a.top__button__link(href="/order") наверх ↑

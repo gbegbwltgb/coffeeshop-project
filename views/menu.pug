@@ -1,0 +1,51 @@
+extends layout
+
+block content
+    div.content-wrapper.menu
+        div.menu-card.card
+            h1.about__title.subtitle Меню
+            h2 Кофе и напитки
+
+            ul.menu__items
+                li.menu__item.card
+                    div.menu__img
+                        img(src="../images/espresso.jpg"  alt='espresso')
+                    div.menu__text Эспрессо
+
+                li.menu__item.card
+                    div.menu__img
+                        img(src="../images/capuchino.jpg"  alt='capuchino')
+                    div.menu__text Капучино
+
+                li.menu__item.card
+                    div.menu__img
+                        img(src="../images/latte.jpg"  alt='latte')
+                    div.menu__text Латте
+                li.menu__item.card
+                    div.menu__img
+                        img(src="../images/tea.jpg"  alt='tea')
+                    div.menu__text Чай
+                li.menu__item.card
+                    div.menu__img
+                        img(src="../images/cacao.jpg"  alt='cacao')
+                    div.menu__text Какао
+            p.text * к любому напитку можно добавить сироп на выбор
+            h2 Десерты
+            ul.menu__items
+                li.menu__item.card
+                    div.menu__img
+                        img(src="../images/cheesecake.jpg"  alt='cheesecake')
+                    div.menu__text Чизкейк
+                li.menu__item.card
+                    div.menu__img
+                        img(src="../images/lemontart.jpg"  alt='lemontart')
+                    div.menu__text Лимонный тарт
+                li.menu__item.card
+                    div.menu__img
+                        img(src="../images/icecream.jpg"  alt='icecream')
+                    div.menu__text Мороженое
+
+
+
+    div.top__button
+        a.top__button__link(href="/menu") наверх ↑
